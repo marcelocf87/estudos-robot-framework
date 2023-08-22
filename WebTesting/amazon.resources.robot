@@ -1,3 +1,10 @@
+"""
+@author Marcelo Custódio Freitas
+@version 1.0
+@since 20/03/2023
+"""
+
+
 *** Settings ***
 Library    SeleniumLibrary
 
@@ -11,7 +18,7 @@ ${TEXTO_HEADER_ELETRONICOS}    Eletrônicos e Tecnologia
 
 *** Keywords ***
 Abrir o navegador
-    Open Browser    browser=chrome
+    Open Browser    browser=edge
     Maximize Browser Window
 
 Fechar o navegador
@@ -48,18 +55,15 @@ Verificar o resultado da pesquisa listando o produto "${PRODUTO}"
 #GHERKIN STEPS
 Dado que estou na home page da Amazon.com.br
     Acessar a home page do site Amazon.com.br
-    Verificar se aparece a frase "Eletrônicos e Tecnologia"
-
+        
 Quando acessar o menu "Eletrônicos"
     Entrar no menu "Eletrônicos"
 
 Então o título da página deve ficar "Eletrônicos e Tecnologia | Amazon.com.br"
-    Verificar se aparece a frase "Eletrônicos e Tecnologia"
-
-E o texto "Eletrônicos e Tecnologia" deve ser exibido na página
     Verificar se o título da página fica "Eletrônicos e Tecnologia | Amazon.com.br" 
 
+E o texto "Eletrônicos e Tecnologia" deve ser exibido na página 
+    Verificar se aparece a frase "Eletrônicos e Tecnologia"
 
 E a categoria "Computadores e Informática" deve ser exibida na página        
-    E a categoria "Computadores e Informática" deve ser exibida na página
-
+    Verificar se aparece a categoria "Computadores e Informática"

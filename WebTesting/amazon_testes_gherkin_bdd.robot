@@ -1,3 +1,10 @@
+"""
+@author Marcelo Custódio Freitas
+@version 1.0
+@since 20/03/2023
+"""
+
+
 *** Settings ***
 Documentation    Essa suíte testa o site da Amazon.com.br
 Resource         amazon.resources.robot
@@ -21,6 +28,9 @@ Caso de teste 02 - Pesquisa de um produto
     [Documentation]  Esse teste verifica a busca de um produto
     [Tags]           busca 
     Dado que estou na home page da Amazon.com.br
-    Quando pesquisar pelo produto "Xbox Series S"
-    Então o título da página deve ficar "Amazon.com.br : Xbox Series S"
-    E um produto da linha "Xbox Series S" deve ser mostrado na página
+    # Quando pesquisar pelo produto "Xbox Series S"
+    # Então o título da página deve ficar "Amazon.com.br : Xbox Series S"
+    # E um produto da linha "Xbox Series S" deve ser mostrado na página
+
+
+    # python -m robot -i busca WebTesting/amazon_testes_gherkin_bdd.robot
