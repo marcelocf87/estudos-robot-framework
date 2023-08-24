@@ -6,7 +6,9 @@
 
 
 *** Settings ***
+Documentation    Aqui estarão presentes todas as chamadas de libraries, resources e variáveis
 Library    SeleniumLibrary
+Resource    hooks.robot
 
 
 *** Variables ***

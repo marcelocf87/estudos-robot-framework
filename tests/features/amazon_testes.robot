@@ -7,7 +7,7 @@
 
 *** Settings ***
 Documentation    Essa suíte testa o site da Amazon.com.br
-Resource         amazon.resources.robot
+Resource         ../../src/config/amazon.resources.robot
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador
 
@@ -33,4 +33,4 @@ Caso de teste 02 - Pesquisa de um produto
     Verificar o resultado da pesquisa listando o produto "Console Xbox Series S"
 
 
-    # python -m robot -i menus WebTesting/amazon_testes.robot
+    #  python -m robot -i menus -dtests/logs tests/amazon_testes.robot

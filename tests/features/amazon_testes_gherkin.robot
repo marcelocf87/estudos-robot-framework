@@ -7,7 +7,7 @@
 
 *** Settings ***
 Documentation    Essa suíte testa o site da Amazon.com.br
-Resource         amazon.resources.robot
+Resource         ../../src/config/amazon.resources.robot
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador
 
@@ -33,4 +33,4 @@ Caso de teste 02 - Pesquisa de um produto
     # E um produto da linha "Xbox Series S" deve ser mostrado na página
 
 
-    # python -m robot -i busca WebTesting/amazon_testes_gherkin_bdd.robot
+    #  python -m robot -i menus -d tests/logs tests/amazon_testes_gherkin.robot
