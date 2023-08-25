@@ -8,11 +8,11 @@
 *** Settings ***
 Documentation    Aqui estarão presentes todas as chamadas de libraries, resources e variáveis
 Library    SeleniumLibrary
-Resource    hooks.robot
 
 
 *** Variables ***
 ${URL}                         https://www.amazon.com.br
+${TIMEOUT}                     3
 ${MENU_ELETRONICOS}            //a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]
 ${HEADER_ELETRONICOS}          //h1[contains(.,'Eletrônicos e Tecnologia')]  
 ${TEXTO_HEADER_ELETRONICOS}    Eletrônicos e Tecnologia
