@@ -33,4 +33,4 @@ Caso de teste 02 - Pesquisa de um produto
     Verificar o resultado da pesquisa listando o produto "Console Xbox Series S"
 
 
-    #  python -m robot -i menus -dtests/logs tests/amazon_testes.robot
+    #  python -m robot -i menus -d tests/logs tests/amazon_testes.robot
