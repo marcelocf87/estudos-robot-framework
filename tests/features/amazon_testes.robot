@@ -30,7 +30,37 @@ Caso de teste 02 - Pesquisa de um produto
     Acessar a home page do site Amazon.com.br
     Digitar o nome de produto "Xbox Series S" no campo de pesquisa
     Clicar no botão de pesquisa
+    Verificar se o título fica "Amazon.com.br : Xbox Series S"
     Verificar o resultado da pesquisa listando o produto "Console Xbox Series S"
 
 
-    #  python -m robot -i menus -d tests/logs tests/amazon_testes.robot
+Caso de Teste 03 - Adicionar Produto no Carrinho
+    [Documentation]    Esse teste verifica a adição de um produto no carrinho de compras
+    [Tags]             adicionar_carrinho
+    Acessar a home page do site Amazon.com.br
+    Digitar o nome de produto "Xbox Series S" no campo de pesquisa
+    Clicar no botão de pesquisa
+    Verificar o resultado da pesquisa listando o produto "Console Xbox Series S"
+    Clicar no produto
+    Adicionar o produto "Console Xbox Series S" no carrinho
+    Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
+ 
+Caso de Teste 04 - Remover Produto do Carrinho
+    [Documentation]    Esse teste verifica a remoção de um produto no carrinho de compras
+    [Tags]             remover_carrinho
+    Acessar a home page do site Amazon.com.br
+    Digitar o nome de produto "Xbox Series S" no campo de pesquisa
+    Clicar no botão de pesquisa
+    Verificar o resultado da pesquisa listando o produto "Console Xbox Series S"
+    Clicar no produto
+    Adicionar o produto "Console Xbox Series S" no carrinho
+    Verificar se o produto "Console Xbox Series S" foi adicionado com sucesso
+    Clicar no botão de carrinho
+    Remover o produto "Console Xbox Series S" do carrinho
+    Verificar se o carrinho fica vazio
+
+
+# Mostre para nós os testes que conseguiu automatizar no site da Amazon.com.br e cole o código de um desses testes aqui + o código da implementação das keywords desse teste.    
+
+
+#  python -m robot -i 'tag' -d tests/logs tests/features/amazon_testes.robot
